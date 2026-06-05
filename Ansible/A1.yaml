@@ -1,6 +1,6 @@
 
 - name : this is my 1st playbook
-  hosts : servers
+  hosts.ini : servers
   tasks :
     - name : print animal name
       debug :
