@@ -1,0 +1,14 @@
+- name : this playbook is for apache installation 
+  hosts : all
+  become : yes
+  
+  tasks :
+    - name : install apache2
+      apt :
+      - name : apache2
+        state : present
+
+    - name : install httpd
+      yum :
+      - name : httpd
+        state : present
