@@ -4,3 +4,7 @@
     - name : print animal name
       debug :
         msg : "hello i am tiger"
+
+    - name : print another animal name
+      debug :
+        msg : "hello i am lion"
