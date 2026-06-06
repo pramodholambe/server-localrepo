@@ -2,7 +2,7 @@
   hosts : all
   vars : 
     animal : "tiger"
- vars_files:
+ vars_files :
     - ./var.txt 
   tasks :
     - name : print animal 1
