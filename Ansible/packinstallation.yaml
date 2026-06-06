@@ -6,6 +6,7 @@
     - name : update
       shell : 
         cmd : apt-get update
+        
     - name : install apache
       apt : 
         name : apache2
