@@ -8,11 +8,11 @@
         cmd : apt-get update
 
     - name : install apache2
-      apt :
-      - name : apache2
+       apt :
+       - name : apache2
         state : present
 
     - name : install httpd
-      yum :
-      - name : httpd
+       yum :
+       - name : httpd
         state : present
