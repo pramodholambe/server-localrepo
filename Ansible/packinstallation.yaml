@@ -6,6 +6,11 @@
     - name : update
       shell : 
         cmd : apt-get update
+        
+    - name: install httpd
+      yum : 
+        name : httpd
+        state : latest
 
     - name : install apache
       apt : 
