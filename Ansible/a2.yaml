@@ -1,0 +1,6 @@
+- name : this is 1st playbook
+  hosts : servers
+  tasks :
+    - name : print animal name
+      debug :
+        msg : "hello i am tiger"
