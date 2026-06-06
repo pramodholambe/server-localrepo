@@ -1,0 +1,12 @@
+- name : installing packages though ansible module
+  hosts : all
+  become : true
+  tasks :
+    - name  : install httpd
+      package :
+        name : httpd
+        state : latest
+    - name : install apache2
+      package :
+        name : apache2
+        state : latest
