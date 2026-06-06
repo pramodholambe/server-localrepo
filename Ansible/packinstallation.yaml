@@ -10,8 +10,4 @@
     - name : install apache
       apt : 
         name : apache2
-        state : present
-    - name : httpd
-       yum : 
-         name : httpd
-         state : present
+        state : latest
