@@ -15,9 +15,11 @@
     - name : print animal 2
       debug :
         msg : "{{animal}}"
+
     - name: get hostname
       shell : hostname
-        msg : machineName
+      register : machineName
+      
     - name : print hostname 
       debug :
         msg : "{{machineName.stdout}}"
