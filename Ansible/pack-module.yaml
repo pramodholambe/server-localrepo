@@ -6,9 +6,11 @@
       package :
         name : httpd
         state : latest
+      when: ansible_os_family == "RedHat"
       ignore_errors : true
-      
+
     - name : install apache2
       package :
         name : apache2
         state : latest
+      when: ansible_os_family == "Debian"
