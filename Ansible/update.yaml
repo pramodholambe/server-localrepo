@@ -16,6 +16,7 @@
     - name : block of lines files added
       blockinfile :
         path : /var/www/html/index.html
+        marker : "<!--- marker for block -->"
         block : |
           <h1> this is pramod </h1>
           <h2> this is 2nd line of block </h2>
