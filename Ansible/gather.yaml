@@ -1,0 +1,13 @@
+- name : gather fact from remote system
+  hosts : all
+  become : true
+  tasks :
+    - name : collect os name
+      debug :
+        msg : {{ansible_distribution}}
+    - name : collect ip address
+      debug :
+        msg : {{ansible_default_ipv4.address}}
+    - name : print working directory
+      debug :
+        msg : {{ansible_env.PWD}}
