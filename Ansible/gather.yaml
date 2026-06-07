@@ -4,10 +4,10 @@
   tasks :
     - name : collect os name
       debug :
-        msg : {{ansible_distribution}}
+        msg : "{{ansible_distribution}}"
     - name : collect ip address
       debug :
-        msg : {{ansible_default_ipv4.address}}
+        msg : "{{ansible_default_ipv4.address}}"
     - name : print working directory
       debug :
-        msg : {{ansible_env.PWD}}
+        msg : "{{ansible_env.PWD}}"
