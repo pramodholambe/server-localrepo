@@ -13,6 +13,14 @@
         regexp : '^</h1>'
         line : '<h1> this is 1st line replacement </h1>'
 
+    - name : block of lines files added
+      blockinfile :
+        path : /var/www/html/index.html
+        block : |
+          <h1> this is pramod </h1>
+          <h2> this is 2nd line of block </h2>
+          <h3> this is 3rd line of block </h3>
+
     - name : restart service
       systemd :
         name : apache2
