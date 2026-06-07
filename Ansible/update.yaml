@@ -16,7 +16,7 @@
     - name : block of lines files added
       blockinfile :
         path : /var/www/html/index.html
-        marker : "<!--- marker for block -->"
+        marker : "<!---  -->"
         block : |
           <h1> Ansible is a popular open-source IT automation engine that simplifies software provisioning, configuration management, and application deployment. It allows system administrators and developers to automate complex, repetitive tasks using simple, human-readable text files without requiring programming skills or installing extra software (agents) on the target servers</h1>
     - name : restart service
