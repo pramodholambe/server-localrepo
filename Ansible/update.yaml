@@ -10,7 +10,7 @@
     - name : add oneline
       lineinfile :
         path : /var/www/html/index.html
-        regexp : '^<h1>'
+        regexp : '<h1>'
         line : "<h1> this is 1st line replacement </h1>"
 
         - name : restart service
