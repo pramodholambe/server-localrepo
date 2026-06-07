@@ -3,7 +3,7 @@
    tasks :
     - name : print numbers
       debug :
-        msg : "{{item}}"
+        msg : "{{ item }}"
       loop : 
         - 1
         - 2
