@@ -1,6 +1,6 @@
 - name : gather fact from remote system
   hosts : all
-  become : true
+  
   tasks :
     - name : collect os name
       debug :
