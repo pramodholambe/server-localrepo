@@ -6,13 +6,15 @@
       copy :
         src : index.html
         dest : /var/www/html/index.html
-    - name : restart service
-      systemd :
-        name : apache2
-        state : restarted
-        enabled : true
+    
     - name : add oneline
       lineinfile :
         path : /var/www/html/index.html
         regexp : '^<h1>'
         line : "<h1> this is 1st line replacement </h1>"
+
+        - name : restart service
+      systemd :
+        name : apache2
+        state : restarted
+        enabled : true
