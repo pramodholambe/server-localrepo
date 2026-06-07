@@ -13,7 +13,7 @@
         regexp : '<h1>'
         line : "<h1> this is 1st line replacement </h1>"
 
-        - name : restart service
+    - name : restart service
       systemd :
         name : apache2
         state : restarted
